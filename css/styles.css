@@ -6,7 +6,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
 /* --------------------
    UTILITIES
    - Colori testo e sfondo
@@ -31,7 +33,7 @@
   background-color: rgba(0, 51, 255, 0.818);
 }
 .bg-gray {
-  background-color: rgba(209, 205, 205, 0.865);
+  background-color: #f6f6f6;
 }
 .bg-black {
   background-color: rgba(0, 0, 0, 0.823);
@@ -72,6 +74,9 @@
 }
 .mg-top-50 {
   margin-top: 50px;
+}
+.mg-left-50 {
+  margin-left: 50px;
 }
 
 /* Dimensioni */
@@ -175,6 +180,17 @@ h3 {
 .feature-section-img {
   flex-basis: 60%;
 }
+.wave {
+  background-image: url(../img/wave.svg);
+  height: 80px;
+  filter: opacity(0.1);
+}
+.wave-rotate {
+  background-image: url(../img/wave.svg);
+  height: 80px;
+  filter: opacity(0.1);
+  transform: rotate(180deg);
+}
 
 /* --------------------
    MAIN FOOTER 
@@ -185,6 +201,12 @@ h3 {
 .ready {
   text-align: center;
   font-size: 1.5rem;
+}
+.text-ready {
+  background-image: url(../img/stars.svg);
+  width: 50%;
+  margin: 0 auto 40px;
+  padding: 20px 50px;
 }
 
 /* --------------------
