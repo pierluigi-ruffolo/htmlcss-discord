@@ -18,7 +18,7 @@
 }
 
 .bg-gray {
-  background-color: gray;
+  background-color: rgba(202, 201, 201, 0.871);
 }
 
 .bg-green {
@@ -61,15 +61,20 @@
 .pd-10 {
   padding: 10px;
 }
+.pd-20 {
+  padding: 20px;
+}
 .mg-30-auto {
   margin: 30px auto;
 }
 .mg-5 {
   margin: 5px;
 }
+.mg-15 {
+  margin: 15px;
+}
 .anchor-button {
   padding: 10px;
-  background-color: aliceblue;
   border-radius: 25px;
   text-decoration: none;
   border: none;
@@ -77,7 +82,7 @@
 /* Contenitore principale generico */
 .container-main {
   max-width: 1020px;
-  height: 400px;
+  min-height: 400px;
   display: flex;
 }
 /* HEADER  */
@@ -104,7 +109,6 @@ header {
 .header-nav li a {
   text-decoration: none;
   color: white;
-  font-size: 18px;
 }
 /* Spaziatura aree header */
 .header-logo {
@@ -135,11 +139,12 @@ header {
   align-items: center;
   gap: 20px;
 }
-.header-main h3 {
+h3 {
   font-size: 2rem;
 }
 .header-main p {
   text-align: center;
+  line-height: 25px;
 }
 
 /* Sezione info */
@@ -148,7 +153,9 @@ header {
 }
 .info-section-text {
   flex-basis: 40%;
+  padding: 25px;
 }
+
 /* Sezione feature */
 .feature-section-text {
   flex-basis: 40%;
