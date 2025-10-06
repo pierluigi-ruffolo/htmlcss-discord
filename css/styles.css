@@ -1,57 +1,49 @@
-/*  RESET BASE  */
+/* --------------------
+   RESET BASE
+-------------------- */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/*  UTILITIES */
-/* Classi riutilizzabili per colori di sfondo */
+/* --------------------
+   UTILITIES
+   - Colori testo e sfondo
+   - Spaziature
+   - Bordo / Raggio
+   - Larghezze
+-------------------- */
+
+/* Colori testo */
 .cl-black {
   color: black;
 }
 .cl-white {
   color: white;
 }
+.cl-blue {
+  color: rgba(0, 51, 255, 0.818);
+}
+
+/* Colori sfondo */
 .bg-acqua {
   background-color: rgba(0, 51, 255, 0.818);
 }
-
 .bg-gray {
-  background-color: rgb(246, 245, 245);
+  background-color: rgba(209, 205, 205, 0.865);
 }
-
-.bg-blue {
-  background-color: rgb(21, 21, 113);
-}
-
 .bg-black {
   background-color: rgba(0, 0, 0, 0.823);
 }
 .bg-white {
   background-color: white;
 }
-
 .gb-light-blue {
   background-color: rgba(0, 68, 255, 0.644);
 }
 
-.bg-pink {
-  background-color: pink;
-}
-
-.bg-violet {
-  background-color: violet;
-}
-/* Bordi riutilizzabili */
-.br-3px-black {
-  border: 3px dashed black;
-}
-
-.br-4px-gray {
-  border: 4px dashed gray;
-}
-/* Spaziatura riutilizzabile */
+/* Spaziature (padding) */
 .pd-5 {
   padding: 5px;
 }
@@ -64,9 +56,8 @@
 .pd-30 {
   padding: 30px;
 }
-.pd-left-50 {
-  padding-left: 50px;
-}
+
+/* Spaziature (margin) */
 .mg-30-auto {
   margin: 30px auto;
 }
@@ -82,10 +73,13 @@
 .mg-top-50 {
   margin-top: 50px;
 }
+
+/* Dimensioni */
 .wh-80 {
   width: 80%;
 }
 
+/* Bordo / pulsanti */
 .anchor {
   border-radius: 25px;
   text-decoration: none;
@@ -96,42 +90,43 @@ button {
   text-decoration: none;
   border: none;
 }
-/* Contenitore principale generico */
+
+/* --------------------
+   LAYOUT GENERALE
+-------------------- */
 .container-main {
   max-width: 1020px;
   display: flex;
 }
-/* HEADER  */
+
+/* --------------------
+   HEADER
+-------------------- */
 header {
   height: 80px;
 }
-/* Contenitore principale header con flexbox */
 .container-header {
   height: 100%;
   max-width: 1020px;
-  margin: 0px auto;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-/* Lista di navigazione in linea */
 .header-nav ul {
   list-style: none;
   display: flex;
   justify-content: center;
   gap: 30px;
 }
-/* Stile link di navigazione */
-.header-nav li a {
+a {
   text-decoration: none;
   color: white;
 }
-/* Spaziatura aree header */
 .header-logo {
   flex-basis: 20%;
   display: flex;
 }
-
 .header-nav {
   flex-basis: 60%;
 }
@@ -140,7 +135,9 @@ header {
   text-align: right;
 }
 
-/* Contenuto principale header */
+/* --------------------
+   HERO
+-------------------- */
 .section-hero {
   background-image: url(../img/jumbo.png);
   background-size: cover;
@@ -163,23 +160,25 @@ h3 {
   line-height: 25px;
 }
 
-/* Sezione info */
+/* --------------------
+   SEZIONI INFO / FEATURE
+-------------------- */
 .info-section-img {
   flex-basis: 60%;
 }
 .info-section-text {
   flex-basis: 40%;
 }
-
-/* Sezione feature */
 .feature-section-text {
   flex-basis: 40%;
 }
-
 .feature-section-img {
   flex-basis: 60%;
 }
-/* Sezione finale del main */
+
+/* --------------------
+   MAIN FOOTER 
+-------------------- */
 .main-footer {
   max-width: 1020px;
 }
@@ -188,48 +187,50 @@ h3 {
   font-size: 1.5rem;
 }
 
-/* FOOTER */
-/* Parte superiore footer (logo + colonne) */
+/* --------------------
+   FOOTER TOP
+-------------------- */
 .footer-top {
   max-width: 1020px;
-  min-height: 500px;
   margin: 0 auto;
   display: flex;
 }
-
-.footer-img {
+.language {
+  display: flex;
+  gap: 5px;
+}
+.footer-contacts {
   flex-basis: 40%;
 }
-/* Colonne info footer */
 .info-footer {
   flex-basis: 60%;
   display: flex;
 }
-/* Colonne specifiche footer */
 .footer-about {
   flex-basis: 25%;
 }
-
 .footer-links {
   flex-basis: 25%;
 }
-
 .footer-services {
   flex-basis: 25%;
 }
-
 .footer-contact {
   flex-basis: 25%;
 }
-/* Divisore orizzontale footer */
-.divider {
-  border: 2px solid gray;
-  margin: 30px 0;
+.info-footer ul {
+  list-style: none;
 }
-/* Parte inferiore footer  */
+.divider {
+  margin: 30px auto;
+  max-width: 1020px;
+  border: 2px solid gray;
+}
+/* --------------------
+   FOOTER BOTTOM
+-------------------- */
 .footer-bottom {
   max-width: 1020px;
-  min-height: 70px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
