@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Discord</title>
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
   <body>
     <!-- HEADER -->
     <!-- Header principale con logo, navigazione e login -->
@@ -13,76 +17,125 @@
       <div class="container-header">
         <!-- Logo -->
         <div class="header-logo">
-          <img  src="./img/logo.svg" alt="logo-discord" />
+          <img src="./img/logo.svg" alt="logo-discord" />
         </div>
+
         <!-- Navigazione principale -->
         <nav class="header-nav">
           <ul>
-            <li><a href="#">scarica</a></li>
-            <li><a href="#">Perche Discord</a></li>
-            <li><a href="#">nitro</a></li>
-            <li><a href="#">sicurezza</a></li>
-            <li><a href="#">assistenza</a></li>
+            <li><a href="#">Scarica</a></li>
+            <li><a href="#">Perché Discord</a></li>
+            <li><a href="#">Nitro</a></li>
+            <li><a href="#">Sicurezza</a></li>
+            <li><a href="#">Assistenza</a></li>
           </ul>
         </nav>
+
         <!-- Pulsante login -->
         <div class="header-login">
-        <a class="anchor-button cl-black bg-white" href="#">Accedi</a>
+          <a class="pd-10 anchor cl-black bg-white" href="#">Accedi</a>
+        </div>
       </div>
     </header>
 
     <!-- MAIN  -->
     <main>
       <!-- Hero / sezione introduttiva -->
-      <section class="section-hero pd-10">
-        <div class="header-main  mg-30-auto">
+      <section class="section-hero pd-30">
+        <div class="header-main mg-30-auto">
           <h3 class="cl-white">Il tuo posto per parlare</h3>
-          <p class="cl-white"> Che tu faccia parte di un club scolastico, gruppo di gamer, comunita artistica mondiale, o semplicemente di un piccolo gruppo di amici che vuole passare il tempo assieme, Discord rende piu facile chiacchierare ogni giorno e ritrovarsi piu spesso.</p>
-         <div>
-          <button class="anchor-button mg-5 bg-white"> Scarica per Mac</button>
-          <button class="anchor-button mg-5 bg-black cl-white">Apri Discord nel tuo browser</button>
-
-     </div>
-    </div>
+          <p class="cl-white">
+            Che tu faccia parte di un club scolastico, gruppo di gamer, comunita
+            artistica mondiale, o semplicemente di un piccolo gruppo di amici
+            che vuole passare il tempo assieme, Discord rende piu facile
+            chiacchierare ogni giorno e ritrovarsi piu spesso.
+          </p>
+          <div>
+            <button class="pd-10 mg-5 bg-white">
+              <span class="pd-5"><i class="fa-solid fa-arrow-down"></i></span
+              >Scarica per Mac
+            </button>
+            <button class="pd-10 bg-black cl-white">
+              Apri Discord nel tuo browser
+            </button>
+          </div>
+        </div>
       </section>
       <!-- Sezione info con immagine e testo -->
-      <section class=" pd-20  bg-white">
+      <section class="pd-30 bg-white">
         <div class="container-main mg-30-auto">
           <div class="info-section-img">
-            <img src="./img/item1.svg" alt="">
+            <img src="./img/item1.svg" alt="item1" />
           </div>
-          <div class="info-section-text">
-            <h3 class="mg-15">Un luogo a invito con tutto lo spazio necessario per parlare</h3>
-          <p class="pd-10">I server Discord sono organizzati in canali tematici in cui puoi collaborare, condividere o semplicemente parlare della tua giornata senza intasare una chat di gruppo</p>
+          <div class="info-section-text pd-20">
+            <h3 class="mg-15">
+              Un luogo a invito con tutto lo spazio necessario per parlare
+            </h3>
+            <p class="pd-10">
+              I server Discord sono organizzati in canali tematici in cui puoi
+              collaborare, condividere o semplicemente parlare della tua
+              giornata senza intasare una chat di gruppo
+            </p>
           </div>
         </div>
       </section>
       <!-- Sezione feature con testo e immagine -->
-      <section class="pd-20 bg-gray">
+      <section class="pd-30 bg-gray">
         <div class="container-main mg-30-auto">
-          <div class=" pd-10 feature-section-text">
+          <div class="pd-10 feature-section-text">
             <h3 class="mg-15">Dove travarsi è facile</h3>
-            <p  class="pd-10"> Mettiti comodo in un canale vocale quando hai tempo. Gli amici nel tuo server possono vedere che sei li e unirsi istantaneamente senza dover chiamare</p>
+            <p class="pd-10">
+              Mettiti comodo in un canale vocale quando hai tempo. Gli amici nel
+              tuo server possono vedere che sei li e unirsi istantaneamente
+              senza dover chiamare
+            </p>
           </div>
           <div class="feature-section-img">
-            <img src="./img/item2.svg" alt=""> 
+            <img src="./img/item2.svg" alt="item2" />
           </div>
         </div>
       </section>
       <!-- Seconda sezione info -->
-      <section class="pd-10 bg-white">
+      <section class="pd-30 bg-white">
         <div class="container-main mg-30-auto">
-          <div class="info-section-img gb-light-blue br-3px-black"></div>
-          <div class="info-section-text bg-pink br-3px-black"></div>
+          <div class="info-section-img">
+            <img src="./img/item3.svg" alt="item3" />
+          </div>
+          <div class="info-section-text">
+            <h3 class="mg-15">Da pochi a un fandom</h3>
+            <p class="pd-10">
+              dai inizio a una community di qualsiasi dimensione con strumenti
+              di moderazione e accesso ai membri personalizzabile. Concedi ai
+              membri poteri speciali, crea canali privati, e molto altro
+            </p>
+          </div>
         </div>
       </section>
       <!-- Sezione finale del main -->
-      <section class="pd-10 bg-gray">
-        <div class="main-footer mg-30-auto bg-green br-3px-black"></div>
+      <section class="bg-gray pd-30">
+        <div class="main-footer mg-30-auto pd-20">
+          <h3 class="mg-top-50 pd-left-50">
+            Tecnologia affidabile per tenersi in contatto
+          </h3>
+          <p class="pd-left-50 mg-top-20 wh-80">
+            Video e audio a bassa latenza ti faranno sentire come se foste tutti
+            nella stessa stanza. Fai ciao in video, guarda gli amici giocare in
+            streming, o riunitevi in una sessione di disegno con la condivisione
+            schermo
+          </p>
+          <img src="./img/item4-big.svg" alt="item4" />
+
+          <div class="ready pd-20">
+            <p class="pd-20">Pronti a iniziare la tua avventura?</p>
+            <button class="pd-10 mg-5 cl-white gb-light-blue">
+              <span class="pd-5"><i class="fa-solid fa-arrow-down"></i></span
+              >Scarica per il Mac
+            </button>
+          </div>
+        </div>
       </section>
     </main>
     <!--  FOOTER  -->
-
     <footer class="bg-black">
       <!-- Parte superiore del footer: logo + 4 colonne -->
       <div class="footer-top pd-10">

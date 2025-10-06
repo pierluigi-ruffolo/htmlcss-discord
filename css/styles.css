@@ -18,11 +18,7 @@
 }
 
 .bg-gray {
-  background-color: rgba(202, 201, 201, 0.871);
-}
-
-.bg-green {
-  background-color: green;
+  background-color: rgb(246, 245, 245);
 }
 
 .bg-blue {
@@ -35,9 +31,7 @@
 .bg-white {
   background-color: white;
 }
-.bg-orange {
-  background-color: orange;
-}
+
 .gb-light-blue {
   background-color: rgba(0, 68, 255, 0.644);
 }
@@ -58,11 +52,20 @@
   border: 4px dashed gray;
 }
 /* Spaziatura riutilizzabile */
+.pd-5 {
+  padding: 5px;
+}
 .pd-10 {
   padding: 10px;
 }
 .pd-20 {
   padding: 20px;
+}
+.pd-30 {
+  padding: 30px;
+}
+.pd-left-50 {
+  padding-left: 50px;
 }
 .mg-30-auto {
   margin: 30px auto;
@@ -73,16 +76,29 @@
 .mg-15 {
   margin: 15px;
 }
-.anchor-button {
-  padding: 10px;
+.mg-top-20 {
+  margin-top: 20px;
+}
+.mg-top-50 {
+  margin-top: 50px;
+}
+.wh-80 {
+  width: 80%;
+}
+
+.anchor {
   border-radius: 25px;
+  text-decoration: none;
+  border: none;
+}
+button {
+  border-radius: 30px;
   text-decoration: none;
   border: none;
 }
 /* Contenitore principale generico */
 .container-main {
   max-width: 1020px;
-  min-height: 400px;
   display: flex;
 }
 /* HEADER  */
@@ -140,7 +156,7 @@ header {
   gap: 20px;
 }
 h3 {
-  font-size: 2rem;
+  font-size: 2.3rem;
 }
 .header-main p {
   text-align: center;
@@ -153,7 +169,6 @@ h3 {
 }
 .info-section-text {
   flex-basis: 40%;
-  padding: 25px;
 }
 
 /* Sezione feature */
@@ -167,8 +182,12 @@ h3 {
 /* Sezione finale del main */
 .main-footer {
   max-width: 1020px;
-  min-height: 800px;
 }
+.ready {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
 /* FOOTER */
 /* Parte superiore footer (logo + colonne) */
 .footer-top {
