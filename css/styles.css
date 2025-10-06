@@ -1,0 +1,211 @@
+/*  RESET BASE  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*  UTILITIES */
+/* Classi riutilizzabili per colori di sfondo */
+.cl-black {
+  color: black;
+}
+.cl-white {
+  color: white;
+}
+.bg-acqua {
+  background-color: rgba(0, 51, 255, 0.818);
+}
+
+.bg-gray {
+  background-color: gray;
+}
+
+.bg-green {
+  background-color: green;
+}
+
+.bg-blue {
+  background-color: rgb(21, 21, 113);
+}
+
+.bg-black {
+  background-color: rgba(0, 0, 0, 0.823);
+}
+.bg-white {
+  background-color: white;
+}
+.bg-orange {
+  background-color: orange;
+}
+.gb-light-blue {
+  background-color: rgba(0, 68, 255, 0.644);
+}
+
+.bg-pink {
+  background-color: pink;
+}
+
+.bg-violet {
+  background-color: violet;
+}
+/* Bordi riutilizzabili */
+.br-3px-black {
+  border: 3px dashed black;
+}
+
+.br-4px-gray {
+  border: 4px dashed gray;
+}
+/* Spaziatura riutilizzabile */
+.pd-10 {
+  padding: 10px;
+}
+.mg-30-auto {
+  margin: 30px auto;
+}
+.mg-5 {
+  margin: 5px;
+}
+.anchor-button {
+  padding: 10px;
+  background-color: aliceblue;
+  border-radius: 25px;
+  text-decoration: none;
+  border: none;
+}
+/* Contenitore principale generico */
+.container-main {
+  max-width: 1020px;
+  height: 400px;
+  display: flex;
+}
+/* HEADER  */
+header {
+  height: 80px;
+}
+/* Contenitore principale header con flexbox */
+.container-header {
+  height: 100%;
+  max-width: 1020px;
+  margin: 0px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Lista di navigazione in linea */
+.header-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+/* Stile link di navigazione */
+.header-nav li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+/* Spaziatura aree header */
+.header-logo {
+  flex-basis: 20%;
+  display: flex;
+}
+
+.header-nav {
+  flex-basis: 60%;
+}
+.header-login {
+  flex-basis: 20%;
+  text-align: right;
+}
+
+/* Contenuto principale header */
+.section-hero {
+  background-image: url(../img/jumbo.png);
+  background-size: cover;
+  background-position: center;
+}
+.header-main {
+  max-width: 800px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.header-main h3 {
+  font-size: 2rem;
+}
+.header-main p {
+  text-align: center;
+}
+
+/* Sezione info */
+.info-section-img {
+  flex-basis: 60%;
+}
+.info-section-text {
+  flex-basis: 40%;
+}
+/* Sezione feature */
+.feature-section-text {
+  flex-basis: 40%;
+}
+
+.feature-section-img {
+  flex-basis: 60%;
+}
+/* Sezione finale del main */
+.main-footer {
+  max-width: 1020px;
+  min-height: 800px;
+}
+/* FOOTER */
+/* Parte superiore footer (logo + colonne) */
+.footer-top {
+  max-width: 1020px;
+  min-height: 500px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.footer-img {
+  flex-basis: 40%;
+}
+/* Colonne info footer */
+.info-footer {
+  flex-basis: 60%;
+  display: flex;
+}
+/* Colonne specifiche footer */
+.footer-about {
+  flex-basis: 25%;
+}
+
+.footer-links {
+  flex-basis: 25%;
+}
+
+.footer-services {
+  flex-basis: 25%;
+}
+
+.footer-contact {
+  flex-basis: 25%;
+}
+/* Divisore orizzontale footer */
+.divider {
+  border: 2px solid gray;
+  margin: 30px 0;
+}
+/* Parte inferiore footer  */
+.footer-bottom {
+  max-width: 1020px;
+  min-height: 70px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
